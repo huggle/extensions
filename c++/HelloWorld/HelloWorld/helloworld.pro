@@ -1,6 +1,9 @@
 TEMPLATE = lib
 TARGET = HelloWorld
-QT += declarative
+QT += declarative xml webkit core gui network
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets webkitwidgets
+
 CONFIG += qt plugin
 
 TARGET = $$qtLibraryTarget($$TARGET)
