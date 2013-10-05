@@ -11,12 +11,10 @@ uri = org.huggle.extension.qt
 
 # Input
 SOURCES += \
-    helloworld_plugin.cpp \
     helloworld.cpp \
     iextension.cpp
 
 HEADERS += \
-    helloworld_plugin.h \
     iextension.h \
     helloworld.h
 

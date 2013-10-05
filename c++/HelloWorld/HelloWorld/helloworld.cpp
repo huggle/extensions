@@ -10,18 +10,9 @@
 
 #include "helloworld.h"
 
-#include <qdeclarative.h>
-
-HelloWorld::HelloWorld(QDeclarativeItem *parent): QDeclarativeItem(parent)
+bool HelloWorld::Register()
 {
-    // By default, QDeclarativeItem does not draw anything. If you subclass
-    // QDeclarativeItem to create a visual item, you will need to uncomment the
-    // following line:
-
-    // setFlag(ItemHasNoContents, false);
+    return true;
 }
 
-HelloWorld::~HelloWorld()
-{
-}
-
+Q_EXPORT_PLUGIN2("org.huggle.extension.qt", HelloWorld)

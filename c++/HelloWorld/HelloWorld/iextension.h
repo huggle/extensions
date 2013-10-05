@@ -24,6 +24,7 @@ namespace Huggle
         static QList<iExtension *> Extensions;
         iExtension();
         virtual ~iExtension();
+        virtual bool Register() { return false; }
     private:
         QString ExtensionName;
         QString ExtensionAuthor;

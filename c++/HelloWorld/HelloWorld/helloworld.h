@@ -11,23 +11,23 @@
 #ifndef HELLOWORLD_H
 #define HELLOWORLD_H
 
-#include <QDeclarativeItem>
+#include <QObject>
 // this is a path to huggle 3 source code, keep it if you
 // checkout extensions folder to same folder where you
 // have huggle3 folder
 #include "iextension.h"
 
-class HelloWorld : public QDeclarativeItem, Huggle::iExtension
+class HelloWorld : public QObject, Huggle::iExtension
 {
     Q_OBJECT
-    Q_DISABLE_COPY(HelloWorld)
+    Q_INTERFACES(Huggle::iExtension)
+    //Q_DISABLE_COPY(HelloWorld)
 
 public:
-    HelloWorld(QDeclarativeItem *parent = 0);
-    ~HelloWorld();
+    //HelloWorld(QDeclarativeItem *parent = 0);
+    //~HelloWorld();
+    bool Register();
 };
-
-QML_DECLARE_TYPE(HelloWorld)
 
 #endif // HELLOWORLD_H
 
