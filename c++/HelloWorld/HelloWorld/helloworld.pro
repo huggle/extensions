@@ -12,10 +12,12 @@ uri = org.huggle.extension.qt
 # Input
 SOURCES += \
     helloworld_plugin.cpp \
-    helloworld.cpp
+    helloworld.cpp \
+    iextension.cpp
 
 HEADERS += \
     helloworld_plugin.h \
+    iextension.h \
     helloworld.h
 
 OTHER_FILES = qmldir
